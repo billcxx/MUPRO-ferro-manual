@@ -1,0 +1,39 @@
+{
+    "name"       : "BaTiO3",
+    "Comment"       : "Fitted by Jian Jun Wang, the landau coefficient needs to be updated according to stress for every time step",
+    "Reference"     : "JAP 108. 114105 (2010)",
+    "CurieT"        : 390,
+    "a0"            : 42769496,
+    "p0"            : 0.26,
+    "Landau"    :
+        {   "a1"    : "5*10^5*160*(cosh(160/tem)/sinh(160/tem)-cosh(160/390)/sinh(160/390))",
+            "a11"   : -1.154E8,
+            "a12"   :  6.530E8,
+            "a111"  : -2.106E9,
+            "a112"  :  4.091E9,
+            "a123"  : -6.688E9,
+            "a1111" :  7.590E10,
+            "a1112" : -2.193E10,
+            "a1122" : -2.221E10,
+            "a1123" :  2.416E10
+        },
+    "Electrostrictive"  :
+        {
+            "Q11"   :  0.11  ,
+            "Q12"   : -0.045 ,
+            "Q44"   :  0.029
+        },
+    "ElasticModulus"    :
+        {
+            "C11"   :  1.7794E11,
+            "C12"   :  0.9635E11,
+            "C44"   :  1.2199E11
+        },
+    "Gradient"          :
+        {
+	    "Reference" : "Hlinka & Marton, PRB 74, 104104(2006)",
+            "G11"   : 51.0E-11,
+            "G12"   : 2.0E-11,
+            "G44"   : 2.0E-11,
+        }
+}
